@@ -243,6 +243,7 @@ form {
   }
   #close.visible {
     display: block;
+    padding-right: 0.5rem;
   }
   .title {
     padding-left: 0;
