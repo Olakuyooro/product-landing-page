@@ -71,15 +71,12 @@ form {
   padding-top: 1rem;
 }
 
-.enco {
-  margin-left: 19rem;
-}
-
 .menu {
   display: flex;
   list-style: none;
   justify-content: space-between;
   padding-right: 10rem;
+  margin-left: 19rem;
 }
 .menu li {
   margin-right: 2.5rem;
@@ -252,21 +249,18 @@ form {
     font-size: 1.5rem;
   }
 
-  .menu {
+  .menu{
+    display: none;
+  }
+
+  .menu.visible{
+    display: block;
     display: flex;
     flex-direction: column;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
     padding-right: 0rem;
+    margin-left: 0;
   }
-
-  .menu li a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.9rem;
-  }
-
+  
   .desc {
     font-size: 2rem;
   }
@@ -317,32 +311,6 @@ form {
   .marsh {
     margin-top: 5rem;
     width: 70%;
-  }
-
-  .enco {
-    display: none;
-  }
-
-  .manu.visible {
-    display: none;
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    font-size: 0.9rem;
-    padding-right: 2rem;
-    background-color: #e33217;
-    padding: 1rem;
-  }
-
-  .manu li {
-    margin-left: 1rem;
-    text-decoration: none;
-  }
-
-  .manu a {
-    text-decoration: none;
-    color: white;
   }
 
   .foot ul {
