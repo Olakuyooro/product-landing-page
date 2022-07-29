@@ -16,10 +16,18 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #e33217;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   width: 100%;
   top: 0;
+}
+
+#hamburger {
+  display: none;
+}
+
+#close{
+  display: none;
 }
 
 .desc {
@@ -27,7 +35,7 @@ body {
   font-family: "Square Peg", cursive;
   font-size: 5rem;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
 }
@@ -39,7 +47,6 @@ form{
 }
 
 #drop {
-  
   padding: 0.2rem;
   border-radius: 1rem;
   background-color: #e33217;
@@ -51,7 +58,7 @@ form{
   margin-top: 0.5rem;
 }
 
-#drop:hover{
+#drop:hover {
   box-shadow: 1px 1px orange;
   transition: ease-out;
   transition-duration: 5000;
@@ -63,6 +70,10 @@ form{
 .title {
   font-weight: 600;
   padding-top: 1rem;
+}
+
+.enco{
+  margin-left: 19rem;
 }
 
 .menu {
@@ -81,8 +92,11 @@ form{
   font-size: 0.9rem;
 }
 
-.menu li a:hover{
+.menu li a:hover {
   text-decoration: underline;
+}
+.manu {
+  display: none;
 }
 
 .alaba {
@@ -156,7 +170,7 @@ form{
   text-align: center;
   margin-bottom: 2rem;
   padding: 0.2rem;
-  font-size: 0.9rem
+  font-size: 0.9rem;
 }
 
 #boot {
@@ -174,7 +188,7 @@ form{
   border-radius: 1rem;
 }
 
-.price{
+.price {
   background-color: antiquewhite;
   width: 50%;
   text-align: center;
@@ -189,41 +203,58 @@ form{
 
 .foot ul {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: center;
+  align-items: center; */
 }
 .foot li {
   list-style: none;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .foot a {
   text-decoration: none;
   color: white;
   font-size: 0.9rem;
 }
-.foot a:hover{
+.foot a:hover {
   text-decoration: underline;
 }
 
 .copy {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: center;
+  align-items: center; */
   color: white;
   opacity: 60%;
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .head {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background-color: #e33217;
     padding: 1rem;
     position: fixed;
   }
 
-  .title{
+  #hamburger {
+    display: block;
+    margin-top: 0.8rem;
+  }
+
+  #hamburger.hidden {
+    display: none;
+  }
+  #close{
+    display: none;
+  }
+  #close.visible{
+    display: block;
+  }
+  .title {
+    padding-left: 0;
     font-size: 1.5rem;
   }
 
@@ -242,7 +273,7 @@ form{
     font-size: 0.9rem;
   }
 
-  .desc{
+  .desc {
     font-size: 2rem;
   }
 
@@ -251,7 +282,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
+    margin-top: 8rem;
   }
 
   .category {
@@ -262,28 +293,67 @@ form{
     grid-template-rows: 25% 25% 25%;
     gap: 7rem;
     background-color: white;
-    padding-left: 7rem;
+    padding-left: 6.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  .product{
+  .product {
     display: flex;
     flex-direction: column;
-    padding-left: 7rem;
+    padding-left: 6.5rem;
   }
 
-  .price{
+  .price {
     margin-top: 0.5rem;
     width: 70%;
   }
 
-  .erik{
+  .erik {
     width: 30%;
   }
 
-  .marsh{
+  .marsh {
     margin-top: 5rem;
     width: 70%;
+  }
+
+ 
+
+  .enco {
+    display: none;
+  }
+
+  .manu.visible{
+    display: none;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    padding-right: 2rem;
+    background-color: #e33217;
+    padding: 1rem;
+  }
+
+  .manu li{
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+
+  .manu a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .foot ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .foot li {
+    list-style: none;
+    margin-left: 0rem;
   }
 }
