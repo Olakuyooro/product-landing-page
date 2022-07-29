@@ -224,7 +224,7 @@ form{
   }
 
   .title{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .menu {
@@ -278,7 +278,9 @@ form{
     width: 70%;
   }
 
- 
+  .erik{
+    width: 30%;
+  }
 
   .marsh{
     margin-top: 5rem;
