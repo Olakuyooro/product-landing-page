@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+* {
+  box-sizing: border-box;
+  /* font-size: calc(0.2rem + 1vw); */
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e33217;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.desc {
+  margin-bottom: 2rem;
+  font-family: "Square Peg", cursive;
+  font-size: 5rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+#mail {
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: #e33217 1px solid;
+  outline: none;
+}
+
+#drop {
+  
+  padding: 0.2rem;
+  border-radius: 1rem;
+  background-color: #e33217;
+  color: white;
+  font-size: 0.8rem;
+  border: #e33217 1.5px solid;
+  width: 50%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+#drop:hover{
+  box-shadow: 1px 1px orange;
+  transition: ease-out;
+  transition-duration: 5000;
+  cursor: pointer;
+}
+.real {
+  display: flex;
+}
+.title {
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 10rem;
+}
+.menu li {
+  margin-right: 2.5rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.menu li a:hover{
+  text-decoration: underline;
+}
+
+.alaba {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+}
+
+.category {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  background-color: white;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.men {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  width: 30%;
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#man {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+#woman {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+#child {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lorem {
+  width: 100%;
+}
+
+.product {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 9rem;
+  width: 100%;
+  padding: 2rem;
+  padding-left: 10rem;
+}
+
+.marsh {
+  background-color: antiquewhite;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.2rem;
+  font-size: 0.9rem
+}
+
+#boot {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+#hood {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+#utd {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+.price{
+  background-color: antiquewhite;
+  width: 50%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  font-size: 0.9rem;
+}
+.foot {
+  background-color: #e33217;
+  padding: 1rem;
+}
+
+.foot ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.foot li {
+  list-style: none;
+  margin-left: 2rem;
+}
+.foot a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+.foot a:hover{
+  text-decoration: underline;
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  opacity: 60%;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px){
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e33217;
+    padding: 1rem;
+    position: fixed;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0rem;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .desc{
+    font-size: 2rem;
+  }
+
+  .alaba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+  }
+
+  .category {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 25%;
+    gap: 7rem;
+    background-color: white;
+    padding-left: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .product{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+  }
+
+  .price{
+    margin-top: 0.5rem;
+    width: 70%;
+  }
+
+  .video{}
+
+  .marsh{
+    margin-top: 5rem;
+    width: 70%;
+  }
+}
