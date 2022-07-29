@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
 * {
   box-sizing: border-box;
-  /* font-size: calc(0.2rem + 1vw); */
 }
 
 body {
@@ -26,7 +25,7 @@ body {
   display: none;
 }
 
-#close{
+#close {
   display: none;
 }
 
@@ -72,7 +71,7 @@ form {
   padding-top: 1rem;
 }
 
-.enco{
+.enco {
   margin-left: 19rem;
 }
 
@@ -128,17 +127,17 @@ form {
 }
 
 #man {
-  width: 70%;
+  width: 80%;
   border-radius: 1rem;
 }
 
 #woman {
-  width: 70%;
+  width: 80%;
   border-radius: 1rem;
 }
 
 #child {
-  width: 70%;
+  width: 80%;
   border-radius: 1rem;
 }
 
@@ -203,12 +202,10 @@ form {
 
 .foot ul {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: space-evenly;
 }
 .foot li {
   list-style: none;
-  margin-left: 1rem;
 }
 .foot a {
   text-decoration: none;
@@ -221,8 +218,8 @@ form {
 
 .copy {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   color: white;
   opacity: 60%;
   font-size: 0.8rem;
@@ -231,9 +228,6 @@ form {
 @media screen and (max-width: 768px) {
   .head {
     display: flex;
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     background-color: #e33217;
     padding: 1rem;
     position: fixed;
@@ -247,10 +241,10 @@ form {
   #hamburger.hidden {
     display: none;
   }
-  #close{
+  #close {
     display: none;
   }
-  #close.visible{
+  #close.visible {
     display: block;
   }
   .title {
@@ -285,6 +279,10 @@ form {
     margin-top: 8rem;
   }
 
+  #drop {
+    padding: 0.5rem;
+  }
+
   .category {
     margin-top: 7rem;
     margin-bottom: 4rem;
@@ -293,11 +291,14 @@ form {
     grid-template-rows: 25% 25% 25%;
     gap: 7rem;
     background-color: white;
-    padding-left: 6.5rem;
+    padding-left: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
+  .video {
+    padding: 2rem;
+  }
   .product {
     display: flex;
     flex-direction: column;
@@ -318,13 +319,11 @@ form {
     width: 70%;
   }
 
- 
-
   .enco {
     display: none;
   }
 
-  .manu.visible{
+  .manu.visible {
     display: none;
     display: flex;
     list-style: none;
@@ -336,12 +335,12 @@ form {
     padding: 1rem;
   }
 
-  .manu li{
+  .manu li {
     margin-left: 1rem;
     text-decoration: none;
   }
 
-  .manu a{
+  .manu a {
     text-decoration: none;
     color: white;
   }
@@ -354,6 +353,6 @@ form {
 
   .foot li {
     list-style: none;
-    margin-left: 0rem;
+    margin-bottom: 1rem;
   }
 }
