@@ -13,7 +13,6 @@ body {
 
 .head {
   display: flex;
-  justify-content: space-between;
   background-color: #e33217;
   padding: 2rem;
   position: fixed;
@@ -21,12 +20,13 @@ body {
   top: 0;
 }
 
-#hamburger {
-  display: none;
+.enco {
+  margin-left: auto;
 }
 
-#close {
+.act {
   display: none;
+  margin-left: auto;
 }
 
 .desc {
@@ -75,8 +75,6 @@ form {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  padding-right: 10rem;
-  margin-left: 4rem;
 }
 .menu li {
   margin-right: 2.5rem;
@@ -90,9 +88,6 @@ form {
 
 .menu li a:hover {
   text-decoration: underline;
-}
-.manu {
-  display: none;
 }
 
 .alaba {
@@ -223,45 +218,44 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-  .head {
+  .title {
+    padding-left: 0;
+    font-size: 1.5rem;
+  }
+  .enco{
+    display: none;
+  }
+  .enco.visible {
+    display: block;
+  }
+ .menu {
     display: flex;
-    background-color: #e33217;
-    padding: 1rem;
-    position: fixed;
+    flex-direction: column;
+    padding-right: 0rem;
+    margin-left: 0rem;
   }
 
-  #hamburger {
+  .menu li {
+    margin-bottom: 0.5rem;
+  }
+  .act {
     display: block;
-    margin-top: 0.8rem;
   }
 
   #hamburger.hidden {
     display: none;
   }
+
   #close {
     display: none;
   }
+
   #close.visible {
     display: block;
-    padding-right: 2rem;
-  }
-  .title {
-    padding-left: 0;
-    font-size: 1.5rem;
   }
 
-  .menu{
-    display: none;
-  }
+ 
 
-  .menu.visible{
-    display: block;
-    display: flex;
-    flex-direction: column;
-    padding-right: 0rem;
-    margin-left: 0;
-  }
-  
   .desc {
     font-size: 2rem;
   }

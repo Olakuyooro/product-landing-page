@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger')
-const navbar = document.querySelector('.menu')
+const navbar = document.querySelector('.enco')
 const closeIcon = document.getElementById('close')
 
 const changer = ()=>{
