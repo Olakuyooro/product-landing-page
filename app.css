@@ -13,11 +13,15 @@ body {
 
 .head {
   display: flex;
+  flex-direction: column;
   background-color: #e33217;
   padding: 2rem;
   position: fixed;
   width: 100%;
   top: 0;
+}
+.oye {
+  display: flex;
 }
 
 .enco {
@@ -74,13 +78,27 @@ form {
 .menu {
   display: flex;
   list-style: none;
-  justify-content: space-between;
 }
 .menu li {
   margin-right: 2.5rem;
 }
 
 .menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.new-menu {
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.new-menu li {
+  list-style: none;
+}
+
+.new-menu li a {
   text-decoration: none;
   color: white;
   font-size: 0.9rem;
@@ -218,21 +236,22 @@ form {
 }
 
 @media screen and (max-width: 768px) {
+  .head {
+    padding-left: 0.5rem;
+  }
+
   .title {
     padding-left: 0;
     font-size: 1.5rem;
   }
-  .enco{
+
+  .enco {
     display: none;
   }
-  .enco.visible {
+
+  .new-menu.visible {
     display: block;
-  }
- .menu {
     display: flex;
-    flex-direction: column;
-    padding-right: 0rem;
-    margin-left: 0rem;
   }
 
   .menu li {
@@ -240,6 +259,9 @@ form {
   }
   .act {
     display: block;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
   }
 
   #hamburger.hidden {
@@ -254,8 +276,6 @@ form {
     display: block;
   }
 
- 
-
   .desc {
     font-size: 2rem;
   }
@@ -265,7 +285,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 12rem;
   }
 
   #drop {
